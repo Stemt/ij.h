@@ -13,8 +13,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-    - name: configure
-      run: ./configure
     - name: bootstrap nob
       run: cc -o nob nob.c
     - name: run build and tests
