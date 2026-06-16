@@ -55,7 +55,7 @@ int main(int argc, char** argv){
 
   nob_cc(&cmd);
   nob_cc_flags(&cmd);
-  cmd_append(&cmd, "-g");
+  cmd_append(&cmd, "-ggdb");
   nob_cc_inputs(&cmd, "./build/test.main.c");
   nob_cc_output(&cmd, "./build/test");
   cmd_append(&cmd, "-I.");
